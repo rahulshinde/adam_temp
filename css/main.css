@@ -288,6 +288,9 @@ html {
   #site #close {
     top: 1rem;
     right: 2rem; }
+    @media screen and (max-width: 740px) {
+      #site #close {
+        right: 1rem; } }
   #site #left,
   #site #right {
     top: 50%;
