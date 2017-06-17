@@ -315,7 +315,7 @@ html {
     background-repeat: no-repeat !important; }
     @media screen and (max-width: 740px) {
       #site .image_modal_container {
-        opacity: 0; } }
+        opacity: 1; } }
   #site .image_caption {
     text-transform: uppercase;
     position: fixed;
