@@ -171,7 +171,7 @@ html {
     background-color: #000;
     height: 1.3rem; }
   #site footer img {
-    width: 15rem;
+    width: 12rem;
     position: fixed;
     bottom: 3rem;
     right: 2rem; }
@@ -279,7 +279,7 @@ html {
   #site #left,
   #site #right {
     box-shadow: 2px 2px 5px #000;
-    width: 4rem;
+    width: 3rem;
     position: absolute;
     z-index: 3000; }
     #site #close:hover,
@@ -364,11 +364,11 @@ html {
     font-size: 25px; }
 
   #site footer img {
-    width: 12rem; }
+    width: 10rem; }
   #site #close,
   #site #left,
   #site #right {
-    width: 3rem; }
+    width: 2.3rem; }
   #site #slide_position {
     top: 1.25rem; } }
 @media only screen and (min-width: 1800px) {
