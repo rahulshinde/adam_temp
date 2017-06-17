@@ -343,7 +343,9 @@ html {
     -moz-animation: gradient 5s linear infinite; }
     @media screen and (max-width: 740px) {
       #site .about_image {
-        display: none; } }
+        display: block;
+        height: auto;
+        max-width: 80vw; } }
   #site #back_to_home {
     font-size: 1.5rem; }
     @media screen and (max-width: 740px) {
