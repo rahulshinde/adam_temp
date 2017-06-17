@@ -114,7 +114,7 @@ html {
     top: 1.5rem;
     left: 1.5rem;
     position: fixed;
-    font-size: 2.4rem;
+    font-size: 2.7rem;
     z-index: 10; }
     #site nav a:link,
     #site nav a:visited {
@@ -150,7 +150,7 @@ html {
       margin-bottom: 1rem;
       font-family: 'Space Mono', monospace;
       /*padding-bottom: 0.2rem;*/
-      font-size: 1.3rem;
+      font-size: 0.8rem;
       text-transform: uppercase; }
       @media screen and (max-width: 740px) {
         #site #links li {
@@ -171,7 +171,7 @@ html {
     background-color: #000;
     height: 1.3rem; }
   #site footer img {
-    width: 12rem;
+    width: 10rem;
     position: fixed;
     bottom: 3rem;
     right: 2rem; }
@@ -181,7 +181,6 @@ html {
   #site section:first-of-type {
     border-top: 0px solid; }
   #site section {
-    background-color: #fff;
     padding-top: 4rem;
     padding-bottom: 4rem;
     border-top: 3px dashed #000;
@@ -267,7 +266,7 @@ html {
   #site #slide_position {
     position: absolute;
     color: magenta;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     left: 1.5rem;
     top: 1.5rem;
     z-index: 3000;
@@ -279,7 +278,7 @@ html {
   #site #left,
   #site #right {
     box-shadow: 2px 2px 5px #000;
-    width: 3rem;
+    width: 2rem;
     position: absolute;
     z-index: 3000; }
     #site #close:hover,
@@ -309,7 +308,7 @@ html {
     top: 2rem;
     left: 2rem;
     right: 2rem;
-    bottom: 3rem;
+    bottom: 4rem;
     display: none;
     background-size: contain !important;
     background-position: center !important;
@@ -329,15 +328,15 @@ html {
     padding: 0.2rem 0;
     font-family: 'Space Mono', monospace;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     line-height: 1.4em;
     /*box-shadow: 0px -2px 5px #000;*/ }
   #site #current {
     padding-right: 0.1em; }
   #site .about_image {
     display: block;
-    margin: 15vh auto 15vh auto;
-    height: 60vh;
+    margin: 10vh auto 10vh auto;
+    height: 80vh;
     width: auto;
     animation: gradient 5s linear infinite;
     -webkit-animation: gradient 5s linear infinite;
@@ -345,9 +344,11 @@ html {
     @media screen and (max-width: 740px) {
       #site .about_image {
         display: none; } }
-  @media screen and (max-width: 740px) {
-    #site #back_to_home {
-      width: 0; } }
+  #site #back_to_home {
+    font-size: 1.5rem; }
+    @media screen and (max-width: 740px) {
+      #site #back_to_home {
+        width: 0; } }
   #site .upcoming_shows {
     margin-top: 10rem;
     text-align: center;
@@ -358,32 +359,51 @@ html {
     font-size: 14px; } }
 @media only screen and (max-width: 1529px) and (min-width: 1281px) {
   html {
-    font-size: 20px; } }
+    font-size: 18px; } }
 @media only screen and (max-width: 1799px) and (min-width: 1530px) {
+  html {
+    font-size: 22px; }
+
+  #site {
+  /*footer{
+    img{
+      width: 10rem;
+    }
+  }
+
+  #close,
+  #left,
+  #right{
+    width: 2.3rem;
+  }
+
+  #slide_position{
+    top: 1.25rem;
+  }*/ } }
+@media only screen and (min-width: 1800px) {
   html {
     font-size: 25px; }
 
-  #site footer img {
-    width: 10rem; }
-  #site #close,
-  #site #left,
-  #site #right {
-    width: 2.3rem; }
-  #site #slide_position {
-    top: 1.25rem; } }
-@media only screen and (min-width: 1800px) {
-  html {
-    font-size: 30px; }
-
-  #site footer img {
-    width: 10rem; }
-  #site #close,
-  #site #left,
-  #site #right {
-    width: 2.5rem; }
-  #site #close {
-    top: 1.5rem; }
-  #site #slide_position {
-    top: 1.25rem; } }
+  /*#site{
+    footer{
+      img{
+        width: 10rem;
+      }
+    }
+  
+    #close,
+    #left,
+    #right{
+      width: 2.5rem;
+    }
+  
+    #close{
+      top: 1.5rem;
+    }
+  
+    #slide_position{
+      top: 1.25rem;
+    }
+  }*/ }
 
 /*# sourceMappingURL=main.css.map */
