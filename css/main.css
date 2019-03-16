@@ -185,7 +185,7 @@ html {
     padding-bottom: 4rem;
     border-top: 3px dashed #000;
     text-align: center; }
-    #site section img {
+    #site section .project_image {
       position: relative;
       margin: 1.5rem;
       display: inline-block;
@@ -195,40 +195,40 @@ html {
       /*margin: 2rem auto 0 auto;*/
       /*border: 3px solid #000;*/ }
       @media screen and (max-width: 740px) {
-        #site section img {
+        #site section .project_image {
           width: 80%;
           margin: 2rem auto; } }
-      #site section img:nth-child(6n - 12) {
+      #site section .project_image:nth-child(6n - 12) {
         border: 3px solid yellow;
         animation: gradient 6s linear infinite;
         -webkit-animation: gradient 6s linear infinite;
         -moz-animation: gradient 6s linear infinite; }
-      #site section img:nth-child(6n - 11) {
+      #site section .project_image:nth-child(6n - 11) {
         border: 3px solid orange;
         animation: gradient 6s linear 1s infinite;
         -webkit-animation: gradient 6s linear 1s infinite;
         -moz-animation: gradient 6s linear 1s infinite; }
-      #site section img:nth-child(6n - 10) {
+      #site section .project_image:nth-child(6n - 10) {
         border: 3px solid limegreen;
         animation: gradient 6s linear 2s infinite;
         -webkit-animation: gradient 6s linear 2s infinite;
         -moz-animation: gradient 6s linear 2s infinite; }
-      #site section img:nth-child(6n - 9) {
+      #site section .project_image:nth-child(6n - 9) {
         border: 3px solid red;
         animation: gradient 6s linear 3s infinite;
         -webkit-animation: gradient 6s linear 3s infinite;
         -moz-animation: gradient 6s linear 3s infinite; }
-      #site section img:nth-child(6n - 8) {
+      #site section .project_image:nth-child(6n - 8) {
         border: 3px solid blue;
         animation: gradient 6s linear 4s infinite;
         -webkit-animation: gradient 6s linear 4s infinite;
         -moz-animation: gradient 6s linear 4s infinite; }
-      #site section img:nth-child(6n - 7) {
+      #site section .project_image:nth-child(6n - 7) {
         border: 3px solid magenta;
         animation: gradient 6s linear 5s infinite;
         -webkit-animation: gradient 6s linear 5s infinite;
         -moz-animation: gradient 6s linear 5s infinite; }
-      #site section img:hover {
+      #site section .project_image:hover {
         cursor: zoom-in; }
     #site section p {
       text-align: center;
@@ -362,6 +362,22 @@ html {
     text-align: center;
     line-height: 1.4em; }
 
+  #site_credit{
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  #site_credit a:link,
+  #site_credit a:visited{
+    color: magenta;
+    text-decoration: none;
+  }
+
+  .project_image.hidden{
+    display: none !important;
+    visibility: hidden;
+  }
+
 @media only screen and (max-width: 1050px) {
   html {
     font-size: 14px; } }
@@ -374,7 +390,7 @@ html {
 
   #site {
   /*footer{
-    img{
+    .project_image{
       width: 10rem;
     }
   }

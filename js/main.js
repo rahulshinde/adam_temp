@@ -36,6 +36,7 @@ Site.scrollToSection = function(event){
 Site.toggleNav = function(){
   Site.scroll_position = $(document).scrollTop();
 
+  Site.y2019 = $('#y2019').offset().top - Site.window_height_offset;
   Site.y2018 = $('#y2018').offset().top - Site.window_height_offset;
   Site.y2017 = $('#y2017').offset().top - Site.window_height_offset;
   Site.y2016 = $('#y2016').offset().top - Site.window_height_offset;
@@ -43,7 +44,10 @@ Site.toggleNav = function(){
   Site.y2014 = $('#y2014').offset().top - Site.window_height_offset;
   Site.y2013 = $('#y2013').offset().top - Site.window_height_offset;
 
-  if(Site.scroll_position >= Site.y2018 && (Site.scroll_position < Site.y2017 || Site.scroll_position <= 0) && !$('.link_2018').hasClass('selected')){
+  if(Site.scroll_position >= Site.y2019 && (Site.scroll_position < Site.y2018 || Site.scroll_position <= 0) && !$('.link_2019').hasClass('selected')){
+    $('.nav_link').removeClass('selected');
+    $('.link_2019').addClass('selected');
+  } else if (Site.scroll_position >= Site.y2018 && Site.scroll_position < Site.y2017 && !$('.link_2018').hasClass('selected')){
     $('.nav_link').removeClass('selected');
     $('.link_2018').addClass('selected');
   } else if (Site.scroll_position >= Site.y2017 && Site.scroll_position < Site.y2016 && !$('.link_2017').hasClass('selected')){
@@ -70,7 +74,7 @@ Site.openImage = function(){
 
   $('body').addClass('stopscroll');
 
-  Site.slideshow_array = $(this).parent().find($('img'));
+  Site.slideshow_array = $(this).parent().find($('.project_image'));
   Site.slideshow_length = Site.slideshow_array.length;
 
 
